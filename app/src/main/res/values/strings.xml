@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyFirstAndroidApp</string>
+    <string name="my_profile_image">my profile image</string>
+    <string name="my_name">Breno Silva Brito</string>
+    <string name="career"><![CDATA[<Full Stack Developer>]]></string>
+</resources>
