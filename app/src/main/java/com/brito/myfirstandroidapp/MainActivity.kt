@@ -10,10 +10,17 @@ import androidx.appcompat.app.AppCompatActivity
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btn = findViewById<Button>(R.id.hobbies)
-        btn.setOnClickListener{
+        val skillsBtn = findViewById<Button>(R.id.skills)
+        skillsBtn.setOnClickListener {
+            val intent = Intent(this, SkillsActivity::class.java)
+            startActivity(intent)
+        }
+
+        val hobbiesBtn = findViewById<Button>(R.id.hobbies)
+        hobbiesBtn.setOnClickListener{
             val intent = Intent(this, HobbiesActivity::class.java)
             startActivity(intent)
         }
+
     }
 }
