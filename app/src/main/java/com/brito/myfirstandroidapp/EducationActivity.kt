@@ -5,14 +5,14 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class SkillsActivity : AppCompatActivity() {
+class EducationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_skills)
+        setContentView(R.layout.activity_education)
 
-        val educationBtn = findViewById<Button>(R.id.educationBtn)
-        educationBtn.setOnClickListener {
-            val intent = Intent(this, EducationActivity::class.java)
+        val achievementBtn = findViewById<Button>(R.id.achievementsBtn)
+        achievementBtn.setOnClickListener {
+            val intent = Intent(this, AchievementsActivity::class.java)
             startActivity(intent)
         }
 
@@ -22,10 +22,11 @@ class SkillsActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val hobbiesBtn = findViewById<Button>(R.id.hobbiesBtn)
-        hobbiesBtn.setOnClickListener {
-            val intent = Intent(this, HobbiesActivity::class.java)
+        val skillsBtn = findViewById<Button>(R.id.skillsBtn)
+        skillsBtn.setOnClickListener {
+            val intent = Intent(this, SkillsActivity::class.java)
             startActivity(intent)
         }
+
     }
 }

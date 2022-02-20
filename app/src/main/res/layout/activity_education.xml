@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EducationActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -19,19 +20,19 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/imageView10"
                 android:layout_width="180dp"
                 android:layout_height="180dp"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/ic_baseline_psychology_24" />
+                app:srcCompat="@drawable/ic_baseline_cast_for_education_24" />
 
             <TextView
-                android:id="@+id/mySkills"
+                android:id="@+id/myEducation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="sans-serif-black"
-                android:text="Skills"
+                android:text="Education"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="#000000"
@@ -46,6 +47,7 @@
                 <TableRow
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:padding="5dp">
 
                     <ImageView
@@ -66,43 +68,6 @@
                         android:layout_height="80dp"
                         app:srcCompat="@drawable/css" />
 
-                    <ImageView
-                        android:id="@+id/imageView7"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        app:srcCompat="@drawable/mysql" />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:id="@+id/imageView5"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        app:srcCompat="@drawable/csharp" />
-
-                    <ImageView
-                        android:id="@+id/imageView6"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        app:srcCompat="@drawable/java" />
-
-                    <ImageView
-                        android:id="@+id/imageView8"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        app:srcCompat="@drawable/git" />
-
-                    <ImageView
-                        android:id="@+id/imageView9"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        app:srcCompat="@drawable/github" />
-
                 </TableRow>
 
             </TableLayout>
@@ -111,12 +76,12 @@
                 android:id="@+id/AboutMySkills"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
                 android:fontFamily="sans-serif-medium"
                 android:padding="20dp"
                 android:text="@string/aboutMySkills"
                 android:textColor="#000000"
-                android:textSize="16sp"
-                android:layout_marginHorizontal="10dp"/>
+                android:textSize="16sp" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -162,13 +127,14 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/educationBtn"
+            android:id="@+id/achievementBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:text="Education"
-            android:background="@drawable/custom_buttons"/>
+            android:background="@drawable/custom_buttons"
+            android:text="Achievements"
+            android:textSize="12dp"/>
 
         <Button
             android:id="@+id/homeBtn"
@@ -176,17 +142,17 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:text="Home"
-            android:background="@drawable/custom_buttons"/>
+            android:background="@drawable/custom_buttons"
+            android:text="Home" />
 
         <Button
-            android:id="@+id/hobbiesBtn"
+            android:id="@+id/skillsBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:text="Hobbies"
-            android:background="@drawable/custom_buttons"/>
+            android:background="@drawable/custom_buttons"
+            android:text="Skills" />
 
     </LinearLayout>
 

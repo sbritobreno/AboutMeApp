@@ -70,32 +70,33 @@
         android:padding="15dp">
 
         <Button
-            android:id="@+id/achievements"
+            android:id="@+id/educationBtn"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Achievements" />
+            android:text="Education" />
 
         <Button
-            android:id="@+id/hobbies"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Hobbies" />
-
-        <Button
-            android:id="@+id/skills"
+            android:id="@+id/skillsBtn"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Skills" />
 
         <Button
-            android:id="@+id/education"
+            android:id="@+id/hobbiesBtn"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Education" />
+            android:text="Hobbies" />
+
+        <Button
+            android:id="@+id/achievementsBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Achievements" />
+
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
