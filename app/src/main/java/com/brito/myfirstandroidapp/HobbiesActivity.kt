@@ -10,9 +10,8 @@ class HobbiesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hobbies)
 
-
         val skillsBtn = findViewById<Button>(R.id.skillsBtn)
-        skillsBtn.setOnClickListener{
+        skillsBtn.setOnClickListener {
             val intent = Intent(this, SkillsActivity::class.java)
             startActivity(intent)
         }
@@ -24,7 +23,7 @@ class HobbiesActivity : AppCompatActivity() {
         }
 
         val achievementsBtn = findViewById<Button>(R.id.achievementsBtn)
-        achievementsBtn.setOnClickListener{
+        achievementsBtn.setOnClickListener {
             val intent = Intent(this, AchievementsActivity::class.java)
             startActivity(intent)
         }

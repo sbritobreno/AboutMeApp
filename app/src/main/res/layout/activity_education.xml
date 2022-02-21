@@ -7,16 +7,54 @@
     android:orientation="vertical"
     tools:context=".EducationActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3d6666"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/eduIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            app:srcCompat="@drawable/ic_baseline_edu_24" />
+
+        <TextView
+            android:id="@+id/eduActName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:padding="5dp"
+            android:text="Education"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/exitIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:background="#3d6666"
+            app:srcCompat="@drawable/ic_baseline_exit_to_app_24" />
+
+    </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical"
-        tools:context=".SkillsActivity">
+        tools:context=".EducationActivity">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <ImageView
@@ -127,14 +165,14 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/achievementBtn"
+            android:id="@+id/achievementsBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="@drawable/custom_buttons"
             android:text="Achievements"
-            android:textSize="12dp"/>
+            android:textSize="10dp"
+            android:background="@drawable/custom_buttons"/>
 
         <Button
             android:id="@+id/homeBtn"
@@ -142,8 +180,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="@drawable/custom_buttons"
-            android:text="Home" />
+            android:text="Home"
+            android:background="@drawable/custom_buttons"/>
 
         <Button
             android:id="@+id/skillsBtn"
@@ -151,8 +189,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="@drawable/custom_buttons"
-            android:text="Skills" />
+            android:text="Skills"
+            android:background="@drawable/custom_buttons"/>
 
     </LinearLayout>
 

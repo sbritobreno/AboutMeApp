@@ -10,8 +10,8 @@ class EducationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_education)
 
-        val achievementBtn = findViewById<Button>(R.id.achievementsBtn)
-        achievementBtn.setOnClickListener {
+        val achievementsBtn = findViewById<Button>(R.id.achievementsBtn)
+        achievementsBtn.setOnClickListener {
             val intent = Intent(this, AchievementsActivity::class.java)
             startActivity(intent)
         }
