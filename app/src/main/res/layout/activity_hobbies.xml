@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/background_img">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -69,55 +70,66 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="sans-serif-black"
+                android:padding="5dp"
                 android:text="Hobbies"
                 android:textAlignment="center"
                 android:textAllCaps="true"
-                android:textColor="#000000"
+                android:textColor="#3d6666"
                 android:textSize="20sp" />
 
-            <TableLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:padding="10dp">
-
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:id="@+id/imageView4"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        app:srcCompat="@drawable/js" />
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        app:srcCompat="@drawable/html" />
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        app:srcCompat="@drawable/css" />
-
-                </TableRow>
-
-            </TableLayout>
-
-            <TextView
-                android:id="@+id/AboutMySkills"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:padding="20dp"
-                android:text="@string/aboutMySkills"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:layout_marginHorizontal="10dp"/>
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/round_element"
+                android:layout_marginHorizontal="20dp">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:srcCompat="@drawable/travel" />
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:srcCompat="@drawable/sports"
+                            android:paddingHorizontal="5dp"/>
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:srcCompat="@drawable/gaming" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/AboutMySkills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="20dp"
+                    android:text="@string/about_my_hobbies"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -168,8 +180,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:text="Skills"
-            android:background="@drawable/custom_buttons"/>
+            android:background="@drawable/custom_buttons"
+            android:text="Skills" />
 
         <Button
             android:id="@+id/homeBtn"
@@ -177,8 +189,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:text="Home"
-            android:background="@drawable/custom_buttons"/>
+            android:background="@drawable/custom_buttons"
+            android:text="Home" />
 
         <Button
             android:id="@+id/achievementsBtn"
@@ -186,9 +198,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
+            android:background="@drawable/custom_buttons"
             android:text="Achievements"
-            android:textSize="10dp"
-            android:background="@drawable/custom_buttons"/>
+            android:textSize="10dp" />
 
     </LinearLayout>
 

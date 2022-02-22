@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     android:baselineAligned="false"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/background_img">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -38,12 +39,13 @@
 
         <ImageButton
             android:id="@+id/exitIcon"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_gravity="center"
             android:layout_marginHorizontal="10dp"
             android:background="#3d6666"
-            app:srcCompat="@drawable/ic_baseline_exit_to_app_24" />
+            app:srcCompat="@drawable/ic_baseline_exit_to_app_24"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
 
@@ -63,6 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginHorizontal="20dp"
                 android:layout_gravity="center">
 
                 <com.google.android.material.imageview.ShapeableImageView
@@ -79,12 +82,11 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:shapeAppearance="@style/roundImageView" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp">
+                    android:layout_gravity="center">
 
                     <TextView
                         android:id="@+id/myName"
@@ -95,15 +97,8 @@
                         android:fontFamily="sans-serif-black"
                         android:text="@string/my_name"
                         android:textAllCaps="true"
-                        android:textColor="#000000"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@id/Career"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintLeft_toRightOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/Career"
@@ -115,52 +110,71 @@
                         android:text="@string/career"
                         android:textAlignment="center"
                         android:textAllCaps="false"
-                        android:textColor="#000000"
-                        android:textSize="20sp"
-                        android:textStyle="italic"
-                        app:layout_constraintBottom_toTopOf="@id/email"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintLeft_toRightOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/myName" />
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
 
-                    <TextView
-                        android:id="@+id/email"
+                    <LinearLayout
+                        android:id="@+id/layoutEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:padding="1dp"
+                            android:src="@drawable/email"/>
+
+                        <TextView
+                            android:id="@+id/email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:autoLink="email"
+                            android:clickable="true"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-black"
+                            android:text="student@dorset-college.ie"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColorLink="#2a4545"
+                            android:textSize="11sp"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutGit"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
-                        android:fontFamily="sans-serif-black"
-                        android:text="Email"
-                        android:textAlignment="center"
-                        android:textAllCaps="false"
-                        android:textColor="#000000"
-                        android:textSize="20sp"
-                        android:textStyle="italic"
-                        app:layout_constraintBottom_toTopOf="@id/git"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/Career" />
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp">
 
-                    <TextView
-                        android:id="@+id/git"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
-                        android:fontFamily="sans-serif-black"
-                        android:text="Git"
-                        android:textAlignment="center"
-                        android:textAllCaps="false"
-                        android:textColor="#000000"
-                        android:textSize="20sp"
-                        android:textStyle="italic"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/email" />
+                        <ImageView
+                            android:id="@+id/githubLink"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:padding="1dp"
+                            android:src="@drawable/github"/>
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                        <TextView
+                            android:id="@+id/git"
+                            android:autoLink="all"
+                            android:clickable="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-black"
+                            android:text="github.com/sbritobreno"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColorLink="#2a4545"
+                            android:textSize="12sp"
+                            android:textStyle="italic"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -168,12 +182,13 @@
                 android:id="@+id/infoAboutMe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/round_element"
                 android:fontFamily="sans-serif"
-                android:padding="15dp"
+                android:padding="10dp"
                 android:text="@string/myStory"
                 android:textAlignment="center"
                 android:textAllCaps="false"
-                android:textColor="#000000"
                 android:textSize="16sp" />
 
             <LinearLayout
@@ -223,7 +238,7 @@
                     android:layout_gravity="center"
                     android:text="@string/copyright"
                     android:textColor="#808080"
-                    app:layout_constraintVertical_bias="0.4"
+                    app:layout_constraintVertical_bias="0.6"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.497"
@@ -237,7 +252,6 @@
                     android:layout_gravity="center"
                     android:text="@string/build_with_android_studio"
                     android:textColor="#808080"
-                    app:layout_constraintVertical_bias="0.9"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

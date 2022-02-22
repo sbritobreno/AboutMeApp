@@ -3,6 +3,8 @@
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 
  class MainActivity : AppCompatActivity() {
@@ -34,5 +36,21 @@ import androidx.appcompat.app.AppCompatActivity
             startActivity(intent)
         }
 
+        val exitBtn = findViewById<ImageButton>(R.id.exitIcon)
+        exitBtn.setOnClickListener{
+            val eBuilder = AlertDialog.Builder(this)
+            eBuilder.setTitle("Exit")
+            eBuilder.setIcon(R.drawable.ic_baseline_warning_24)
+            eBuilder.setMessage("Do you really want to exit ?")
+            eBuilder.setPositiveButton("Yes"){
+                Dialog, which->
+                finish()
+            }
+            eBuilder.setNegativeButton("No"){
+                    Dialog, which->
+            }
+            val createBuild = eBuilder.create()
+            createBuild.show()
+        }
     }
 }

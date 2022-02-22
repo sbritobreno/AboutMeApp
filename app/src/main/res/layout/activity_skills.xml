@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/background_img">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -69,10 +70,19 @@
                 android:layout_gravity="center"
                 android:fontFamily="sans-serif-black"
                 android:text="Skills"
+                android:padding="5dp"
                 android:textAlignment="center"
                 android:textAllCaps="true"
-                android:textColor="#000000"
+                android:textColor="#3d6666"
                 android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/round_element">
 
             <TableLayout
                 android:layout_width="wrap_content"
@@ -87,8 +97,8 @@
 
                     <ImageView
                         android:id="@+id/imageView4"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
                         app:srcCompat="@drawable/js" />
 
                     <ImageView
@@ -150,10 +160,11 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:padding="20dp"
-                android:text="@string/aboutMySkills"
-                android:textColor="#000000"
+                android:text="@string/about_my_skills"
                 android:textSize="16sp"
                 android:layout_marginHorizontal="10dp"/>
+
+            </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
