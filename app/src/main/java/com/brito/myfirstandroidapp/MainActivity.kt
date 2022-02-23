@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity
         val educationBtn = findViewById<Button>(R.id.educationBtn)
         educationBtn.setOnClickListener {
             val intent = Intent(this, EducationActivity::class.java)
+
             startActivity(intent)
         }
 

@@ -21,6 +21,7 @@ class AchievementsActivity : AppCompatActivity() {
         val homeBtn = findViewById<Button>(R.id.homeBtn)
         homeBtn.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(intent)
         }
 
@@ -38,7 +39,7 @@ class AchievementsActivity : AppCompatActivity() {
             eBuilder.setMessage("Do you really want to exit ?")
             eBuilder.setPositiveButton("Yes"){
                     Dialog, which->
-                finish()
+                finishAffinity()
             }
             eBuilder.setNegativeButton("No"){
                     Dialog, which->
