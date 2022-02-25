@@ -8,6 +8,7 @@
         <entry key="..\:/MobileApps/MyFirstAndroidApp/app/src/main/res/drawable/er.xml" value="0.1655" />
         <entry key="..\:/MobileApps/MyFirstAndroidApp/app/src/main/res/drawable/ic_baseline_warning_24.xml" value="0.161" />
         <entry key="..\:/MobileApps/MyFirstAndroidApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
+        <entry key="..\:/MobileApps/MyFirstAndroidApp/app/src/main/res/drawable/logo_background.xml" value="0.161" />
         <entry key="..\:/MobileApps/MyFirstAndroidApp/app/src/main/res/drawable/profilePhoto_background.xml" value="0.212" />
         <entry key="..\:/MobileApps/MyFirstAndroidApp/app/src/main/res/drawable/round_element.xml" value="0.163" />
         <entry key="..\:/MobileApps/MyFirstAndroidApp/app/src/main/res/drawable/round_textview.xml" value="0.163" />
@@ -20,6 +21,7 @@
         <entry key="..\:/MobileApps/MyFirstAndroidApp/app/src/main/res/layout/activity_skills.xml" value="0.264" />
         <entry key="..\:/MobileApps/MyFirstAndroidApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.264" />
         <entry key="..\:/MobileApps/MyFirstAndroidApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2265" />
+        <entry key="..\:/MobileApps/MyFirstAndroidApp/app/src/main/res/mipmap-anydpi-v26/logo.xml" value="0.161" />
         <entry key="..\:/MobileApps/MyFirstAndroidApp/app/src/main/res/mipmap-anydpi-v26/profilePhoto.xml" value="0.2595" />
       </map>
     </option>
