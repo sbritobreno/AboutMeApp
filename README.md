@@ -1,8 +1,8 @@
 # AboutMeApp
 My first android app as part of the first continuous assessment - Mobile App
 
->Breno Silva Brito
->ID: 24059
+Breno Silva Brito
+<br>ID: 24059</br>
 
 #### Requirements
 
