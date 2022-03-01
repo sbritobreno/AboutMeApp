@@ -23,7 +23,7 @@ ID: 24059
 
 #### Report
 
-Throughout this assessment I could finally understand better the basics concepts to deploy an android App, it helped me as a practice 
+** Throughout this assessment I could finally understand better the basics concepts to deploy an android App, it helped me as a practice 
 to use, test and study many .xml tags, elements from the design window, and a little bit of Kotlin, by the time I started this assignment 
 I was a lot lost about what I should do and how I would do it, so with the android studio up and running I started playing around with the
 software, delving each folder and files that were created by default, so when I started really doing the AboutMeApp I started from the layout, 
