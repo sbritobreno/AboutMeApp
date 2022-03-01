@@ -17,11 +17,11 @@ ID: 24059
 - [x] images related to the details presented e.g. your school logo, image of your school, etc. (At least one image should be present).
 - [x] at the bottom, a row containing three buttons (or two buttons).
 - [x] back button with text same as previous activity's name, should not be present in first of the four extra activities.
-- [] home icon (no text).
+- [ ] home icon (no text).
 - [x] next button with text same as next activity's name, should not be present in last of the four extra activities.
 - [x] same small copyright text present in Main Activity.
 
-Throughout this assessment I could finally understand better the basics concepts to deploy an android App, it helped me as a practice 
+     Throughout this assessment I could finally understand better the basics concepts to deploy an android App, it helped me as a practice 
 to use, test and study many .xml tags, elements from the design window, and a little bit of Kotlin, by the time I started this assignment 
 I was a lot lost about what I should do and how I would do it, so with the android studio up and running I started playing around with the
 software, delving each folder and files that were created by default, so when I started really doing the AboutMeApp I started from the layout, 
